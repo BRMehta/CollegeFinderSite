@@ -1,0 +1,381 @@
+<?php
+
+session_start();
+//$http_referer = $_SERVER['HTTP_REFERER'];
+?>
+<html lang="en">
+<head>
+  <title>College Spree</title>     
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<style>
+	body{
+		padding-top:40px;
+		background-color:#bbdefb;
+	}
+
+ .jumbotron{
+ 	color:#252839;
+ 	background-color:#f2b632;
+ }
+ /*
+ .nav-tabs{
+ 	background-color:#b5b5b7;
+ }*/
+ tbody{
+ 	background-color:#ede9ce;
+ }
+ thead{
+ 	background-color:#c7ad88;
+ }
+ .nav-tabs{
+ 	background-color:#252839;
+ }
+ .dis {
+    pointer-events:none; //This makes it not clickable
+}
+ </style>
+
+
+</head>
+
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../project/about.html" class="navbar-brand">College Spree</a>
+			</div><!--navbar header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active dis"><a href="#">Home</a></li>
+					<li class="dropdown">
+  					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				    <li id="Signup" class="disable_reg"><a href="../project/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				    <li id="login" class="disable_login"><a href="../project/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>				
+			    </ul>
+			    
+			</div>
+		</div><!--end of container-->
+	</nav><!--End navbar-->
+
+	<!--jumbotron-->
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>College Spree</h1>
+			<p>Our site helps you to identify the best college matches for you or your son or daughter.</p>	
+		</div><!--end of container-->
+	</div><!--end of jumbotron-->
+
+	<!--dynamic tab for top 10 colleges-->
+	<div class="container">
+		 <h2>Top 10 Colleges in MUMBAI of various stream:</h2>
+		 <ul class="nav nav-tabs">
+			<li class="active" style="color:red"><a data-toggle="tab" href="#Science">Science</a></li>
+			<li style="color:red"><a data-toggle="tab" href="#Commerce">Commerce</a></li>
+			<li style="color:white"><a data-toggle="tab" href="#Diploma">Diploma</a></li>
+			<li style="color:white"><a data-toggle="tab" href="#Engineering">Engineering</a></li>
+		 </ul>
+
+		 <!--content of dynamic tab-->
+		<div class="tab-content">
+		<!--content of science tab-->
+		    <div id="Science" class="tab-pane fade in active">
+		      	<h3>Science</h3>
+		      	<div class="table-responsive">
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Rank</th>
+				        <th>College Name</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>Ramnarain Ruia College of Arts & Science
+						</td>
+				      </tr>
+				         <tr>
+				        <td>2</td>
+				        <td>Mithibai College of Arts,Chauhan Institute of Science & Amrutben Jivanlal College of Commerce and Economics - Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>3</td>
+				        <td>K J Somaiya College of Science & Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>4</td>
+				        <td>Kishinchand Chellaram (K C) College of Arts, Science and Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>5</td>
+				        <td>Ramniranjan Jhunjhunwala College
+						</td>
+				      </tr>
+				         <tr>
+				        <td>6</td>
+				        <td>Sophia College for Women
+						</td>
+				      </tr>
+				         <tr>
+				        <td>7</td>
+				        <td>Kelkar Education Trust V G Vaze College of Arts, Science and Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>8</td>
+				        <td>Kirti M.Doongursee College
+						</td>
+				      </tr>
+				         <tr>
+				        <td>9</td>
+				        <td>SIES College of Arts, Science & Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>10</td>
+				        <td>Guru Nanak Khalsa College of Arts,Science & Commerce
+						</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+				</div><!--end of science tab-->
+
+				<!--content of commerce tab-->
+		    <div id="Commerce" class="tab-pane fade">
+		      	<h3>Commerce</h3>
+		      	<div class="table-responsive">
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Rank</th>
+				        <th>College Name</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>St. Xavier's College
+						</td>
+				      </tr>
+				         <tr>
+				        <td>2</td>
+				        <td>Shri Narsee Monjee College of Commerce and Economics
+						</td>
+				      </tr>
+				         <tr>
+				        <td>3</td>
+				        <td>R.A. Podar College of Commerce and Economics
+						</td>
+				      </tr>
+				         <tr>
+				        <td>4</td>
+				        <td>H.R. College of Commerce and Economics
+						</td>
+				      </tr>
+				         <tr>
+				        <td>5</td>
+				        <td>K J Somaiya College of Arts & Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>6</td>
+				        <td>K.P.B. Hinduja College of Commerce and Economics
+						</td>
+				      </tr>
+				         <tr>
+				        <td>7</td>
+				        <td>Jai Hind College
+						</td>
+				      </tr>
+				         <tr>
+				        <td>8</td>
+				        <td>Lala Lajpat Rai College of Commerce and Economics
+						</td>
+				      </tr>
+				         <tr>
+				        <td>9</td>
+				        <td>St. Andrew's College of Arts,Science and Commerce
+						</td>
+				      </tr>
+				         <tr>
+				        <td>10</td>
+				        <td>SIES - College of Arts, Science & Commerce
+						</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+		    </div><!--end of Commerce tab-->
+
+		    <!--content of Diploma tab-->
+		    <div id="Diploma" class="tab-pane fade">
+		      	<h3>Diploma</h3>
+		     	<div class="table-responsive">
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Rank</th>
+				        <th>College Name</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>Government Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>2</td>
+				        <td>K. J. Somaiya Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>3</td>
+				        <td>Kala Vidya Mandir Institute of Technology
+						</td>
+				      </tr>
+				         <tr>
+				        <td>4</td>
+				        <td>L&T INSTITUTE OF TECHNOLOGY
+						</td>
+				      </tr>
+				         <tr>
+				        <td>5</td>
+				        <td>Premlila Vithaldas Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>6</td>
+				        <td>Shah & Anchor Kutchhi Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>7</td>
+				        <td>Shri Bhagubhai Mafatlal Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>8</td>
+				        <td>Sophia Shree B.K. Somani Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>9</td>
+				        <td>Vidyalankar Polytechnic
+						</td>
+				      </tr>
+				         <tr>
+				        <td>10</td>
+				        <td>Zagdu Singh Charitable Trust's Thakur Polytechnic
+						</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+		    </div><!--end of Diploma tab-->
+
+		    <!--content of Engineeing tab-->
+		    <div id="Engineering" class="tab-pane fade">
+		      	<h3>Engineering</h3>
+		  		<div class="table-responsive">
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Rank</th>
+				        <th>College Name</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>Indian Institute of Technology, Bombay (IIT-B), Powai, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>2</td>
+				        <td>Institute of Chemical Technology, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>3</td>
+				        <td>Veermata Jijabai Technological Institute (VJTI), Matunga, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>4</td>
+				        <td>Sardar Patel College of Engineering (SPCE), Andheri, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>5</td>
+				        <td>Sardar Patel Institute of Technology (SPIT), Andheri, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>6</td>
+				        <td>DJ Sanghvi College of Engineering (DJSCE), Vile Parle, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>7</td>
+				        <td>Vivekanand Education Society's Institute of Technology (VESIT), Chembur, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>8</td>
+				        <td>Thadomal Shahani Engineering College (TSEC), Bandra, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>9</td>
+				        <td>KJ Somaiya College of Engineering (KJSCE), Vidyavihar, Mumbai
+						</td>
+				      </tr>
+				         <tr>
+				        <td>10</td>
+				        <td>Fr. Conceicao Rodrigues College of Engineering, Mumbai
+						</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+		    </div><!--end of enginering tab-->
+
+		</div><!--end of the content ofdynamic tab-->
+	</div>
+
+<script type="text/javascript">
+    function theFunction () {
+        var x = document.createElement("A");
+         x.setAttribute("href", "http://www.w3schools.com");
+    }
+</script>
+ 
+
+	<!--link to jquery*essential*-->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

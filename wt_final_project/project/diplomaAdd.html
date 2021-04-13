@@ -1,0 +1,153 @@
+<?php
+require 'pass.php';
+if(!isset($_SESSION['name']))
+	header('Location:homepage.html');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!--link to jquery*essential*-->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="C:\Users\lenovo\Desktop\website\login page\images\students-cap.png" type="image/x-icon">
+  <title>Diploma Admission Process | College Spree</title>
+<style>
+	body{
+		padding-top:30px;
+		background-color:#fedc3d;
+	}
+ /*
+ .nav-tabs{
+ 	background-color:#b5b5b7;
+ }*/
+ tbody{
+ 	background-color:#ede9ce;
+ }
+ thead{
+ 	background-color:#c7ad88;
+ }
+ .nav-tabs{
+ 	background-color:#252839;
+ }
+  #enggProcess{
+	  	  display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	  }
+	  .our_vision_heading {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.heading-new {
+    border-bottom: 1px solid #e9e9e9;
+    margin-top: 0;
+    font-variant: all-small-caps;
+    font-weight: 700;
+    padding-bottom: 2px;
+    font-size: 25px;
+}
+.heading-new span {
+    border-bottom: 2px solid #ff6b49!important;
+}
+ol{
+	padding-left:10%;
+	padding-right:10%;
+}<style>.dis {pointer-events:none; //This makes it not clickable}</style>
+ </style>
+
+</head>
+
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../project/about_us.html" class="navbar-brand">College Spree</a>
+			</div><!--navbar header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../project/home.html">Home</a></li>
+					<li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stream
+       					<span class="caret"></span></a>
+						<ul class="dropdown-menu" style="background-color:#3c948b">
+						    <li><a href="../project/science_clg.php">Science</a></li>
+						    <li><a href="../project/comm_clg.php">Commerce</a></li>
+						    <li><a href="../project/diploma_clg.php">Diploma</a></li>
+						    <li><a href="../project/engg_clg.php">Engineering</a></li>
+  						</ul>
+
+  					</li>
+  					<li class="dropdown active">
+        				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Admission Process
+       					<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						    <li><a href="../project/sciAndComProcess.html">Science and Commerce</a></li>
+						    <li><a href="../project/diplomaAdd.html">Diploma</a></li>
+						    <li><a href="../project/enggAddProcess.html">Engineering</a></li>
+  						</ul>
+
+  					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				    <li id="Logout" class="disable_reg"><a href="logout.php"><span class="glyphicon glyphicon-user"></span> Log out</a></li>
+			    </ul>
+			</div>
+		</div><!--end of container-->
+	</nav><!--End navbar-->
+	<br>
+	<div  style="background-color:#00ddd8;">
+	<h1 class="heading-new our_vision_heading"><span>Centralized Admission Process (CAP) for post ssc diploma<span></h1>
+	<img src="images/diploma process.png" align="center" id="enggProcess">
+	</div>
+	<h3 class="heading-new our_vision_heading" ><span>Steps to be followed for Post SSC Diploma Addmission</span></h3>
+	<ol>
+		<br>
+		<li>Purchase Application kit from ARC</li>
+		<li>Online registration of application for admission through computer connected to Internet on the website for Maharashtra State/All India/J &amp; K Migrant/Minority Candidates.</li>
+		<li>Documents verification, updating and <b><u>confirmation</u></b> of Application Form for Admission in person at Facilitation Center(FC).</li>
+		<li>Display of the provisional merit lists on website <a href="http://www.dtemaharashtra.gov.in/approvedinstitues/StaticPages/HomePage.aspx" style="color:red">www.dtemaharashtra.gov.in</a>.</li>
+		<li>Submission of grievance, if any, at FC</li>
+		<li>Display of the final merit lists for all types of candidates on website.</li>
+		<li>Display of Category wise Seat Distribution (Seat Matrix) for CAP Round I</li>
+		<li>Online Submission &amp; Confirmation of Option Form for CAP Round-I,II,III through candidates Login by himself/herself through the website.</li>
+		<li>Display of Provisional Allotment of CAP Round-I</li>
+		<li><b>Reporting to the Admission Reporting Centre (ARC) for CAP Round I.</b> (If seat is allotted, Report to ARC, Select Freeze/Slide/Float option. Produce Original Documents for Verification &amp; Pay Seat Acceptance Fee in the form DD.)</li>
+		<li>Display of Provisional Allotment of CAP Round-II</li>
+		<li><b>Reporting to the Admission Reporting Centre (ARC) for CAP Round II.</b> (If seat is allotted first time i.e. in Round II , Report to ARC, Select Freeze/Slide/Float option. Produce Original Documents for Verification &amp; Pay Seat Acceptance Fee in the form DD.)</li>
+		<li>Display of Provisional Allotment of CAP Round-III</li>
+		<li><b>Reporting to the Admission Reporting Centre (ARC) for CAP Round III.</b> (If seat is allotted first time i.e. in Round III , Report to ARC, Select Freeze/Slide/Float option. Produce Original Documents for Verification &amp; Pay Seat Acceptance Fee in the form DD.)</li>
+		<li>Display of Vacant Seats for CAP Round-IV</li>
+		<li>Online Submission &amp; Confirmation of fresh Option Form for CAP Round-IV through candidates Login by himself/herself through the website. <b>For all candidates who have;</b> 
+			<ul>
+				<li><i>Not been allotted any seat in Rounds I/II/III</i></li>
+				<li><i>Not participated by the way of not filling the Option form in CAP Round I</i></li>
+				<li><i>Those who have taken and cancelled their admission in the earlier rounds</i></li>
+				<li><i>Those who have Freezed the admission in earlier rounds but now are desirous of changing the option to Floating or Sliding</i></li>
+			</ul>
+		</li>
+		<li>Display of Provisional Allotment of CAP Round-IV</li>
+		<li><b>Reporting to the ARC as per Allotment of CAP Round IV</li></b> (If seat is allotted first time i.e. in Round IV, Report to ARC, Produce Original Documents for Verification &amp; Pay Seat Acceptance Fee in the form DD.)</li>
+		<li><b>For all candidates:</b> Reporting to the Allotted Institute and Confirmation of Admission by submitting required documents and paying remaining fees, as per the Allotment.</li>
+	</ol>
+
+
+	</body>
+</html>

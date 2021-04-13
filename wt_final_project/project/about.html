@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!--link to jquery*essential*-->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="C:\Users\lenovo\Desktop\website\login page\images\students-cap.png" type="image/x-icon">
+  <title>College Spree</title>
+<style>
+	body{
+		padding-top:40px;
+		/*background-color:#bbdefb;*/
+		background-image: url(images/About1.jpg);
+		background-repeat: no-repeat;
+		 background-size: 100% 67.5%;
+	}
+	body>background-image{
+		opacity:0.1;
+	}
+ tbody{
+ 	background-color:#ede9ce;
+ }
+ thead{
+ 	background-color:#c7ad88;
+ }
+ .nav-tabs{
+ 	background-color:#252839;
+ }
+ .testimonial {
+    width: 90%;
+    padding: 16px 16px 16px 32px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7F7F7;
+    border: 8px solid #EEE;
+    border-radius: 8px;
+}
+.testimonial::before {
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    padding-left:20px;
+}
+.testimonial::after {
+    content: "";
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+.welcome_text {
+    margin: 20px 50px 20px 50px;
+}
+.our_vision_heading {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.heading-new {
+    border-bottom: 1px solid #e9e9e9;
+    margin-top: 0;
+    font-variant: all-small-caps;
+    font-weight: 700;
+    padding-bottom: 2px;
+    font-size: 22px;
+}
+.heading-new span {
+    border-bottom: 2px solid #ff6b49!important;
+}
+.our_vision_sub_heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.col-md-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.welcome_text p {
+    font-size: 16px;
+}
+.our_vision_image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18%;
+}
+.our_vision_text {
+    display: inline-block;
+    width: 80%;
+}
+.dis {pointer-events:none; //This makes it not clickable}
+ </style>
+
+</head>
+
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div><!--navbar header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+                <li class="active dis"><a href="#" class="navbar-brand">College Spree</a></li>
+					<li><a href="../project/homepage.html">Home</a></li>
+					<li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stream
+       					<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+                           <li><a href="#">Science</a></li>
+                            <li><a href="#">Commerce</a></li>
+                            <li><a href="#">Diploma</a></li>
+                            <li><a href="#">Engineering</a></li>
+                        </ul>
+
+  					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+                    <li id="Signup" class="disable_reg"><a href="../project/signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="login" class="disable_login"><a href="../project/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>                
+                </ul>
+			    
+			</div>
+		</div><!--end of container-->
+	</nav><!--End navbar-->
+	<h1 style="text-align: justify;padding-left:50px" align="center">About us</h1>
+	<hr>
+	<div class="testimonial">
+		<h3 style="text-align: center; line-height: 150%;padding-left:40px;">College Spree is an online platform that helps students in admission process and finds best college. 
+		</h3>
+	</div>
+	<div class="row welcome_text">
+    	<h3 class="heading-new our_vision_heading"><span>Our Vision</span></h3>
+        <p class="our_vision_sub_heading">Simplifying College Selection &amp; Admission in Mumbai</p>
+        
+		<div class="col-md-6 our_vision">
+        	<p class="our_vision_image"><img src="images/Colleges.png" class="img-responsive"></p>
+            <p class="our_vision_text">Mumbai has many number of colleges</p>
+        </div>
+        <div class="col-md-6 our_vision">
+        	<p class="our_vision_image"><img src="images/Admissins.png" class="img-responsive"></p>
+            <p class="our_vision_text">India has the most complex admission procedures with physical forms and  documents.</p>
+        </div>
+        <div class="col-md-6 our_vision">
+        	<p class="our_vision_image"><img src="images/Online.png" class="img-responsive"></p>
+            <p class="our_vision_text">College Spree aims to make college selection &amp; admission simple by connecting students with colleges.</p>
+        </div>
+    </div>
+    <h3 class="heading-new our_vision_heading"><span>How our process works</span></h3>
+    <img src="images/process.png"  width="75%" height="50%" style="padding-left:25%">
+        
+</body>
+</html>

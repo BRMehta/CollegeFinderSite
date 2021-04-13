@@ -1,0 +1,95 @@
+<?php require 'reg_db.php'; ?>
+
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+			<!--link to jquery*essential*-->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"></link>
+		<link rel="icon" href="C:\Users\lenovo\Desktop\website\login page\images\students-cap.png" type="image/x-icon">
+		<title>Sign Up | College Spree</title>
+		<style>
+		body{
+		background-image: url("images/s1.jpg");
+			background-repeat: no-repeat;
+			background-size:100%;
+		}
+		</style>
+	</head>
+	<body>
+		<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../project/about.html" class="navbar-brand">College Spree</a>
+			</div><!--navbar header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../project/homepage.html">Home</a></li>
+					<li class="dropdown">
+						<ul class="dropdown-menu">
+						    <li><a href="#">Science</a></li>
+						    <li><a href="#">Commerce</a></li>
+						    <li><a href="#">Diploma</a></li>
+						    <li><a href="#">Engineering</a></li>
+  						</ul>
+  					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+				    <li class="active"><a href="../project/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			    </ul>
+			</div>
+		</div><!--end of container-->
+	</nav><!--End navbar-->
+		
+		<!--content of login-->
+		<div class="container-fluid">
+			<!--<img src="images/logo.jpg">-->
+					<h1>
+  				Create your CollegeSpree Account
+  				</h1>
+  				<p>All the fields are mandatory</p>
+			<form action="../project/signup.html" method="POST">
+				<div class="form-input">
+					<input type="text" name="name" placeholder="Enter username">
+				</div>
+
+				<div class="form-input">
+					<input type="text" name="email" placeholder="Enter email">
+				</div>
+				<!--<div class="form-input">
+					<input type="password" name="password" placeholder="Enter password">
+				</div>-->
+				<div class="form-input">
+					<input type="password" name="password" placeholder="Enter password">
+				</div>
+				<input type="submit" name="submit" value="SIGN UP" class="btn-login"><br>
+				<!--<a href="#">Forgot your password?</a><br>
+				<a href="#">Forgot your username?</a><br>-->
+				<a href="../project/login.html">Already a member? Log in.</a>
+			</form>
+		</div>
+
+	</body>
+</html>
